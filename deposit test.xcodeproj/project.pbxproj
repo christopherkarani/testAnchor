@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9E8E51F82D5F765600293707 /* stellarsdk in Frameworks */ = {isa = PBXBuildFile; productRef = 9E8E51F72D5F765600293707 /* stellarsdk */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9E8E51DA2D5F763100293707 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8E51F82D5F765600293707 /* stellarsdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "deposit test";
 			packageProductDependencies = (
+				9E8E51F72D5F765600293707 /* stellarsdk */,
 			);
 			productName = "deposit test";
 			productReference = 9E8E51C92D5F762F00293707 /* deposit test.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 9E8E51C02D5F762F00293707;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9E8E51F62D5F765600293707 /* XCRemoteSwiftPackageReference "stellar-ios-mac-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9E8E51CA2D5F762F00293707 /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E8E51F62D5F765600293707 /* XCRemoteSwiftPackageReference "stellar-ios-mac-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Soneso/stellar-ios-mac-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E8E51F72D5F765600293707 /* stellarsdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E8E51F62D5F765600293707 /* XCRemoteSwiftPackageReference "stellar-ios-mac-sdk" */;
+			productName = stellarsdk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E8E51C12D5F762F00293707 /* Project object */;
 }

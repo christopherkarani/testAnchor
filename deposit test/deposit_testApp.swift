@@ -11,7 +11,7 @@ import SwiftUI
 struct deposit_testApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DepositView()
         }
     }
 }
